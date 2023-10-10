@@ -1,1 +1,0 @@
-# minjae.github.io
