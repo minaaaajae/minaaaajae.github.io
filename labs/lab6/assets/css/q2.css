@@ -1,0 +1,57 @@
+/* ADD ANY LINES OF CODE YOU DEEM NECESSARY FOR QUESTION 2*/
+
+/* Part 1: Create a keyframe animation for the ball bounce. The ball should translate from its starting Y value of -200px to 30px. */
+@keyframes ball-bounce {
+    0% {
+      transform: translateY(-200px);
+    }
+    100% {
+      transform: translateY(30px);
+    }
+  }
+
+#ball {
+    display: block;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fd6c2d;
+    z-index: 1;
+    transform: translateY(-200px);
+    animation: ball-bounce 0.45s cubic-bezier(0.42, 0, 0.7, 0.5) infinite alternate;
+}
+/*Part 2: Create a keyframe animation for the shadow change. The shadow should grow smaller when the ball is closer to the ground, and scale to half its original size. Additionally, the opacity should change from its initial value of 0.5 to 0.6, as shadows get darker when closer to the ground. */
+@keyframes shadow-change {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(0.5);
+      opacity: 0.6;
+    }
+  }
+/*Part 3: Add both of these keyframes to their respective ids in the CSS. The staff solution takes roughly 0.45 seconds with a timing-function of cubic-bezier(0.42, 0, 0.7, 0.5), has no delay, repeats infinitely, and alternates (go forward and back). */
+#shadow {
+    height: 50px;
+    width: 160px;
+    background: black;
+    opacity: 0.5;
+    border-radius: 50%;
+    animation: shadow-change 0.45s cubic-bezier(0.42, 0, 0.7, 0.5) infinite alternate;
+}
+
+#ball, #shadow {
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+}
+
+body, html {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background: #f7f5f2;
+    position: relative;
+}
