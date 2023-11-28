@@ -1,0 +1,163 @@
+/* css code for index.html and experience.html */
+/* Descirption: I create my personal webiste layout on index.html and using experience.html as indicating the experiences that I made */
+body, h1, h5, ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #13A8B1;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    font-family:'Passion One', sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-box {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    border: 3px solid #000000;
+    width: 300px;
+    height: 300px;
+    margin: 90px;
+    margin-bottom: 20px; 
+    align-items: center;
+}
+.left-box h1 {
+    margin-bottom: 3px; 
+    padding: 0 20px; 
+    font-family:'Passion One', sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+}
+.left-box h5 {
+    font-family:'Passion One', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px; 
+    padding: 0 20px; 
+}
+
+.nav-button {
+    margin-bottom: 20px; 
+    width: 210px; 
+    height: 70px; 
+    padding: 10px 12px;
+    font-family:'Baloo Tamma', sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    border: none;
+    border-radius: 5px;
+    background-color: #13A8B1;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    display: inline-block;
+}
+
+.nav-button:hover {
+    background-color: green;
+}
+
+.nav-button:active {
+    background-color: #5783db;
+}
+
+.right-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.travel {
+    text-align: center;
+    margin: 10px;
+}
+
+.travel img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    opacity: 0.7;
+    border: 2px solid #000000;
+    justify-content: center;
+}
+.travel img:hover {
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.travel h3 {
+    font-family: 'Passion One', sans-serif;
+    font-size: 25px;
+    color: red;
+    opacity: 0.6;
+
+}
+
+.travel p {
+    font-family: 'Passion One', sans-serif;
+    font-size: 14px;
+}
+
+.experience {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.photo-dump img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #5783db;
+    justify-content: center;
+    margin: 120px;
+    margin-bottom: 5px;
+}
+
+.photo-dump h3 {
+    font-family: 'Baloo Tamma', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.photo-dump h5 {
+    font-family: 'Baloo Tamma', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+.photo-dump p {
+    font-family: 'Baloo Tamma', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+/* css code for animation.html */
