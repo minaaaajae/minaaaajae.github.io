@@ -1,5 +1,6 @@
 /* css code for index.html and experience.html */
 /* Descirption: I create my personal webiste layout on index.html and using experience.html as indicating the experiences that I made */
+
 body, h1, h5, ul {
     margin: 0;
     padding: 0;
@@ -159,5 +160,3 @@ header {
     font-size: 15px;
     font-weight: lighter;
 }
-
-/* css code for animation.html */
